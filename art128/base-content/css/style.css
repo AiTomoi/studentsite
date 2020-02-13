@@ -111,7 +111,7 @@ button:hover {
 
 .buton.alt{
     background-color: transparent;
-    color: rgba(0,51,102,1);
+    color: rgba(0,0,0);
     border: 1px solid rgba(0,51,102,1);
 }
 
