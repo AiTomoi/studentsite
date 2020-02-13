@@ -1,0 +1,36 @@
+/*----------------------------
+CSS TABLE OF CONTENTS
+
+# BASE CONTENT (GLOBALS)
+   # RESET
+   # COLORS
+   # TYPOGRAPGY
+        # BODY
+        # HEADINGS
+        # LINKS
+        # LISTS
+        # BLOCK QUOTES
+    # MEDIA
+        # IMAGES (Responsive)
+    # COMPONENTS/UI ELEMENTS
+        # BUTTONS
+#BASE LAYOUT 
+        # CONTAINER
+        # MEDIA QUERIES
+        # GRID SYSTEM
+ # SITE STRUCTURE
+        # SITE HEADER
+        # SITE MAIN
+        # SITE FOOTER
+        # SITE NAVIGATION
+            # TOGGLE NAV
+        # SECTIONS
+        # SUB PAGES
+
+
+---------------------------------*/
+
+/* GLOBAL RESET */
+BODY { MARGIN: 0; }
+* { box-sizing: border-box; }
+
