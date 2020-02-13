@@ -111,13 +111,14 @@ button:hover {
 
 .buton.alt{
     background-color: transparent;
-    color: rgba(0,0,0);
-    border: 1px solid rgba(0,51,102,1);
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .buton.alt:hover {
     color: rgba(255,255,255.1);
-    border: 1px solid rgba(0,0,51,1);
+    border: 1px solid rgb(0, 0, 255);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 
