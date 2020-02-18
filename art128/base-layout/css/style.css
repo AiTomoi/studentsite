@@ -118,4 +118,108 @@ a:hover {
     border: 1px solid rgba(0,0,51,1);
 }
 
+/* BASE LAYOUT */
 
+/* CONTAINER */
+
+
+
+/*  MEDIA QUERIES */
+
+
+
+/* FOR SMALL-SIZED SCREENS (and Larger) */
+
+body{
+     font-size: 87.5% ; /* 14px */     
+}
+
+.container {
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+
+/* FOR MID-SIZED SCREENS/TABLETS  (and Larger) */
+@media (min-width:768px) {
+}
+
+/* FOR LARGE-SIZED SCREENS/LAPTOPS (and Larger)  */
+@media (min-width:1000px) {
+    body {
+        font-size:100% /* 16px */ }
+    .container { 
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* FOR EXTRA-LARGE-SIZED SCREENS/DESKTOP MONITORS (and Larger) */
+@media (min-width:1200px) {
+    body {
+        font-size: 112.5% /* 18px */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* FOR LAYOUT DEMO PURPOSES ONLY */
+
+/* FOR SMALL-SIZED SCREENS (and Larger) */
+
+
+body.demo::before {
+
+    content: "Small Screen (0 - 767 px)";
+    display: block;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: .2em;
+}
+
+/* FOR MID-SIZED SCREENS/TABLETS  (and Larger) */
+@media (min-width:768px) {
+    body.demo::before {
+        content: "Mid Screen (768px - 999px)";
+        background: blue; 
+    }
+}
+/* FOR LARGE-SIZED SCREENS/LAPTOPS (and Larger)  */
+@media (min-width:1000px) {
+    body.demo::before {
+        content: "large Screen (1000px - 1199px)"; 
+        background: green;
+    }
+}
+
+/* FOR EXTRA-LARGE-SIZED SCREENS/DESKTOP MONITORS (and Larger) */
+@media (min-width:1200px) {
+    body.demo::before {
+        content: "EX-Larger Screen (1200px +)"; 
+        background: purple;
+    }
+}
