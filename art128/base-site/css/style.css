@@ -124,23 +124,18 @@ button:hover {
 
 /* BASE LAYOUT */
 
-/* CONTAINER */
-
-
-
-/* MEDIA QUERIES */
-
 /* FOR SMALL-SIZED SCREENS (and Larger) */
 body {
     font-size: 87.5% /* 14px */
 }
-
+/* CONTAINER */
 .container {
     padding: 0 1em;
     margin: 0 auto;
     /* overflow-x: hidden; */
 }
 
+/* MEDIA QUERIES */
 /* FOR MID-SIZED SCREENS/TABLETS (and Larger) */
 @media (min-width:768px) {
 }
@@ -179,7 +174,6 @@ body {
     .one-half { width: 48%; }
     .one-third { width: 31.3333%; }
     .push-one-third { margin-left: 34.3333%; }
-    .push-two-third { margin-left: 67.6666%}
     .two-thirds { width: 64.6666%; }
     .one-fourth { width: 23%; }
     .push-one-fourth { margin-left: 26%; }
@@ -192,25 +186,78 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+}
 
+/* SITE STRUCTURE */
 
+/* SITE HEADER */
+
+.site-header {
+    padding: 1em .5em;
+}
+
+@media (min-width: 768px) {
+    .site-header .container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
-/*  SITE STRUCTURE */
+.site-header a {
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
+}
+.site-header a:hover {
+    color: rgba(0,0,0,1);
+}
 
-.site-header{
+/* SITE ID (LOGO) */
+.site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.site-id a {
+    display: block;
+    padding: .25em 0;
+}
+
+/* SITE NAV (Primary Top Nav) */
+.site-nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
+.site-nav li {
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    padding: .5em 1em;
+}
+
+/* SITE MAIN (Main Content Area) */
 .site-main {
 
 }
 
+/* SITE FOOTER */
 .site-footer {
 
 }
+
+
+
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+
+
 /* FOR LAYOUT DEMO PURPOSES ONLY */
 
 .demo .column {
@@ -260,69 +307,20 @@ body.demo::before {
 
 /* FOR DEV TESTING ONLY */
 
- /* *{
+/* * {
     background-color: rgba(255,0,0,.2);
-    color: rgba(255,0,0,.1);
-    box-shadow: 0 0 0 3px inset rgba(255, 0, 0, 1);
-} 
-
-
+    color: rgba(255,0,0,.3);
+    box-shadow: 0 0 0 3px inset rgba(255,0,0,1);
+}
 .site-header { 
     background-color: rgba(0,255,0,.4);
     box-shadow: 0 0 0 3px inset rgba(0,255,0,1);
 }
-.site-main {
+.site-main { 
     background-color: rgba(0,0,255,.4);
     box-shadow: 0 0 0 3px inset rgba(0,0,255,1);
 }
-.site-footer {
+.site-footer { 
     background-color: rgba(255, 255, 0, 0.4);
     box-shadow: 0 0 0 3px inset rgba(255,255,0,1);
-}
-
-/* SITE HEADER */
-
-.site-header {
-    padding: 1em .5em;
-
-}
-
-@media (min-width: 768px){
-
-.site-header .container {
-    display: flex;
-    justify-content: space-between;
-}
-}
-
-.site-header a {
-    color: rgba(0,0,0,1);
-    text-decoration: none;
-}
-
-/* SITE ID (LOGO)  */
-.site-id h1 {
-    font-size: 1.5em;   
-    margin: 0; 
-}
-
-.site-id a {
-    display: block;
-    padding: .75em 0;
-}
-
-/* SITE NAV (Primary Top nav)  */
-.site-nav ul {
-    display: flex;
-}
-
-.site-nav li {
-    padding: 0 1em;
-    list-style: none;
-}
-.site-nav a {
-    display: block;
-    padding: 1em;
-}
-
-/* SOTE ,AOM  */
+} */
