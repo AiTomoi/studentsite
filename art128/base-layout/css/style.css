@@ -179,6 +179,7 @@ body {
     .one-half { width: 48%; }
     .one-third { width: 31.3333%; }
     .push-one-third { margin-left: 34.3333%; }
+    .push-two-third { margin-left: 67.6666%}
     .two-thirds { width: 64.6666%; }
     .one-fourth { width: 23%; }
     .push-one-fourth { margin-left: 26%; }
