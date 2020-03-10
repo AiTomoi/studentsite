@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var mytogglemenu = document.querySelector('.toggle-nav');
 
     mymenubutton.addEventListener('click', function () {
-        mymtogglemenu.classList.toggle('expanded');
+        mytogglemenu.classList.toggle('expanded');
     });
 
 });
