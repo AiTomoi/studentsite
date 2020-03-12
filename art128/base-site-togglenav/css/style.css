@@ -297,7 +297,6 @@ body {
         position: static;
         left: auto;
         display: block;
-        margin-top: 1em;
     }
 
     .toggle-nav.expanded .site-nav a {
@@ -311,10 +310,16 @@ body {
     background: rgba(0, 0, 51, 1);
 }
 
+/*  ANIMATIN THE TOGGLE NAV */
+.toggle-nav .site-nav ul {
+        transition: all 1s ease;
+        max-height: 0;
+}
+.toggle-nav.expanded .site-nav ul {
+    max-height: 400px;
 }
 
-
-
+}
 
 /* NAVICON */
 
