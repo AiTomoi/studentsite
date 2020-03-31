@@ -97,8 +97,9 @@ p {
 }
 
 .date {
-    color: rgba(0,0,0,.5);
     font-style: italic;
+    color: rgba(0,0,0,.5);
+    
 }
 
 
@@ -148,6 +149,26 @@ button:hover {
 .button.alt:hover {
     color: rgba(255,255,255,1);
     background-color: rgba(0, 0, 51, 1);
+}
+/* BLOCKQUOTES */
+blockquote{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+/* HELPERS */
+@media(min-width:768px){
+    .hideonlarge {
+        visibility: hidden;
+    }
+}
+/* MEDIA */
+Img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* BASE LAYOUT */

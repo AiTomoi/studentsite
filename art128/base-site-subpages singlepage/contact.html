@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="ut-8" />
-    <title>Site Base | Base Layout</title>
+    <title>Site Name | Contact</title>
     <meta name="description" content="This is a Starter HTML, CSS, and JS Boilerplate/Framework." />
 
     <!-- FOR SMALL SCREENS -->
@@ -25,22 +25,17 @@
     <header class="site-header toggle-nav">
         <div class="container">
             <div class="site-id">
-                <h1><a href="index.html">Site Name</a>
-                    <h1>
+                <h1><a href="index.html">Site Name</a> / Contact Us</h1>
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu</div>
                 <ul>
 
+                    <li class="hideonlarge"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-
-        </div>
-
-        <div class='site-nav'>
 
 
         </div>
@@ -51,12 +46,12 @@
         <section class="hero">
             <h2>About us</h2>
             <p>This is sub paragraph in the hero section,briefly summarizing this page.</p>
-            <a href="#contactinfo" class="button">Button</a>
-            <a href="#map" class="button alt">Alt Button</a>
+            <a href="#contactinfo" class="button">Button</a>Contact Info</a>
+            <a href="#map" class="button alt">Map</a>
         </section>
-        <section id="contactinfo" <div class="container">
-            <h3>WAys to Get in Touch</h3>
-
+        <section id="contactinfo" 
+            <div class="container">
+            <h3 class="sectionhead">Ways to Get in Touch</h3>
             <div class="row">
                 <div class="column one-harf">
                     <address>
@@ -64,9 +59,11 @@
                         Honolulu, HI<br />
                         96814
                     </address>
-                    <a href="tel:808-123-4567" </div> <div class="column one-harf">
+                    <a href="tel:808-123-4567">(808)123-4567</a>
 
-                        <form action="#">
+                    </div>
+                     <div class="column one-harf">
+                          <form>
 
                             <label for="name">Your Name</label>
                             <input type="text" id="yourname" name="yourname" />
@@ -76,18 +73,29 @@
 
                             <label for="yourmessage">Your Message</label>
                             <input type="text" id="yourmessage" name="yourmessage" />
-                        </form>
 
+                            <input type="submit" value="Submit" />
 
+                          </form>           
                 </div>
-        </section>
-    </main>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <div class="container">
+            <h3 class="sectionhead">Map</h3>
+            <img src="http://placehold.it/1600x400" alt="Map" />
+        </div>
+    </section>
+</main>
+    
     <footer class="site-footer">
         <nav class="site-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 

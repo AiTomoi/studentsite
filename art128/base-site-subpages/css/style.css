@@ -7,6 +7,7 @@ CSS TABLE OF CONTENTS
         # BODY
         # HEADINGS
         # PARAGRAPHS
+        # TYPE SPECIMEN
         # LINKS
         # LISTS
         # BLOCK QUOTES
@@ -22,24 +23,23 @@ CSS TABLE OF CONTENTS
 # SITE STRUCTURE
     # SITE HEADER
         # SITE ID
-    # SITE MAIN
     # SITE FOOTER
+    # SITE MAIN
     # SITE NAVIGATION
         # TOGGLE NAV
     # SECTIONS
     # SUB PAGES
 --------------------- */
 
-/* GLOBAL RESETS */
-body { margin: 0; }
-* { box-sizing: border-box; }
+/* GLOBAL RESETS  */
+body { margin; 0;}
+* {box-sizing: border-box; }
 
 /* TYPOGRAPHY */
-
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 100%; /* This sets the value of 1em */ 
-    line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+/*   font-size: 100%  This sets the value of 1em */
+  line-height: 1.4;
 }
 
 /* HEADINGS */
@@ -48,8 +48,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em; /* 48px based on a 16px em */
-    line-height: 1;
+    font-size: 3em;/* 48px based on a 16px em */
+}
+ line-height: 1;
 }
 
 h2 {
@@ -78,50 +79,68 @@ h6 {
 /* PARAGRAPHS */
 p {
     max-width: 35em;
-
 }
 
-/*  TYPE SPECIMEN */
-
+/* TYPE SPECIMEN */
 .headline {
     font-size: 4em;
     font-weight: bold;
-
+   
 }
 
 .subheadline {
-
     font-size: 2em;
-    font-weight: 1.2;
+    line-height: 1.2;
+    font-weight: normal;
     color: rgba(0,0,0,.7);
 }
 
 .date {
-    color: rgba(0,0,0,.5);
     font-style: italic;
+    color: rgba(0,0,0,.5);
 }
-
 
 /* LINKS */
 a {
     color: rgba(0, 51, 102, 1);
     text-decoration: none;
 }
+
 a:hover {
-    color: rgba(0, 0, 51, 1);
+    color: rgba(0, 0, 0, 1);
     text-decoration: underline;
 }
+
+
+/* BLOCKQUOTES */
+blockquote{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+/* HELPERS */
+@media(min-width:768px){
+    .hideonlarge {
+        visibility: hidden;
+    }
+}
+
+
+
 /* MEDIA */
 img {
     max-width: 100%;
     height: auto;
 }
 
-
 /* BUTTONS */
 .button,
-button {
-    font-size: 1em;
+button,
+input[type="submit"]{
+   font-size: 1em;
     display: inline-block;
     background-color: rgba(0, 51, 102, 1);
     color: rgba(255,255,255,1);
@@ -132,8 +151,10 @@ button {
     line-height: 1;
     text-align: center;
 }
+
 .button:hover,
-button:hover {
+button:hover,
+input[type="submit"]:hover {
     color: rgba(255,255,255,1);
     background-color: rgba(0, 0, 51, 1);
     text-decoration: none;
@@ -148,21 +169,26 @@ button:hover {
 .button.alt:hover {
     color: rgba(255,255,255,1);
     background-color: rgba(0, 0, 51, 1);
-}
 
+  
+  
+  
 /* BASE LAYOUT */
 
 /* FOR SMALL-SIZED SCREENS (and Larger) */
 body {
     font-size: 87.5% /* 14px */
 }
-/* CONTAINER */
+  
+  
+  /* CONTAINER */
 .container {
     padding: 0 1em;
     margin: 0 auto;
     /* overflow-x: hidden; */
 }
-
+  
+  
 /* MEDIA QUERIES */
 /* FOR MID-SIZED SCREENS/TABLETS (and Larger) */
 @media (min-width:768px) {
@@ -180,13 +206,16 @@ body {
     .container { max-width: 1200px; }
 }
 
+  
 /* GRID SYSTEM */
 
 .column {
     margin-top: 1%;
     margin-bottom: 1%;
 }
-
+  
+  
+  
 @media (min-width: 768px) {
     .row {
         display: flex;
@@ -205,32 +234,35 @@ body {
     .two-thirds { width: 64.6666%; }
     .one-fourth { width: 23%; }
     .push-one-fourth { margin-left: 26%; }
-
-    .row.centered {
+  
+  
+   .row.centered {
         justify-content: center;
     }
 
-    .column.centered {
+  
+   .column.centered {
         margin-left: auto;
         margin-right: auto;
     }
-}
 
-/* SITE STRUCTURE */
+  
+  
+  /* SITE STRUCTURE */
 
 /* SITE HEADER */
 
 .site-header {
     padding: 1em .5em;
 }
-
+  
+  
 @media (min-width: 768px) {
     .site-header .container {
         display: flex;
         justify-content: space-between;
     }
 }
-
 
 .site-header a,
 .site-footer a {
@@ -241,13 +273,13 @@ body {
 .site-footer a:hover {
     color: rgba(0,0,0,1);
 }
-
-
 /* SITE FOOTER */
 .site-footer {
     padding: 1em .5em 2em .5em;
 }
-
+  
+  
+  
 /* SITE ID (LOGO) */
 .site-id h1 {
     font-size: 1.5em;
@@ -255,11 +287,15 @@ body {
     text-align: center;
 }
 
+  
+  
 .site-id a {
     display: inline-block;
     padding: .25em 0;
 }
 
+  
+  
 /* SITE NAV (Primary Top Nav) */
 .site-nav ul {
     display: flex;
@@ -268,6 +304,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+  
+
 
 .site-nav li {
     list-style: none;
@@ -278,17 +317,27 @@ body {
     padding: .5em 1em;
 }
 
+  
+  
 /* MENU BUTTON */
 .menu-button {
     position: absolute;
     left: -9999px;
-    padding: .5em 1em;
+    padding: .5em;
 }
+  
+  
+  
 .menu-button:hover {
     cursor: pointer;
 }
-
-
+.menu-button::selection {
+    color: none;
+    background: none;
+}
+  
+  
+  
 /* TOGGLE-NAV */
 
 @media (max-width: 767px) {
@@ -296,64 +345,63 @@ body {
     .toggle-nav .site-id h1 {
         text-align: left;
     }
-    
+
     .toggle-nav .menu-button {
         position: absolute;
-        left: auto;  
+        left: auto;
         top: 1em;
         right: 1.5em;
     }
 
     .toggle-nav .site-nav {
         text-align: center;
-        }
-
-
-        /* HIDE NAV ON SMALL SCREENS BY DEFAULT */
-     .toggle-nav .site-nav ul {
-        position: absolute;
-        left: -9999px;    
     }
-        /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
+
+    /* HIDE NAV ON SMALL SCREENS BY DEFAULT */
+    .toggle-nav .site-nav ul {
+        position: absolute;
+        left: -9999px;
+        margin-top: 1em;
+    }
+
+    /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
     .toggle-nav.expanded .site-nav ul {
         position: static;
         left: auto;
         display: block;
     }
-
     .toggle-nav.expanded .site-nav a {
-        background: rgba(0,51,102,1);
+        background: rgba(0, 51, 102, 1);
         color: rgba(255, 255, 255, 1);
         margin: .5em 0;
         padding: 1em;
-}
+    }
 
-.toggle-nav.expanded .site-nav a:hover {
-    background: rgba(0, 0, 51, 1);
-}
+    .toggle-nav.expanded .site-nav a:hover {
+        background: rgba(0, 0, 51, 1);
+    }
 
-/*  ANIMATIN THE TOGGLE NAV */
-.toggle-nav .site-nav ul {
+    /* ANIMATING THE TOGGLE NAV */
+    .toggle-nav .site-nav ul {
         transition: all 1s ease;
         max-height: 0;
-}
-.toggle-nav.expanded .site-nav ul {
-    max-height: 400px;
-}
+    }
+
+    .toggle-nav.expanded .site-nav ul  {
+        max-height: 400px;
+    }
 
 }
 
 /* NAVICON */
 
-
 .navicon {
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0,0,0,0);
     padding: 0;
 }
-
 .navicon::after {
     content: "\2630";
-    color: rgba(0.0.0.1);
+    color: rgba(0,0,0,1);
     display: inline-block;
     font-size: 1.5em;
     transform: rotate(0deg);
@@ -367,9 +415,6 @@ body {
 
 
 
-
-
-
 /* SITE MAIN (Main Content Area) */
 .site-main {
 
@@ -380,9 +425,22 @@ section {
     padding: 4em 0;
 }
 
+.sectionhead {
+    padding-top: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+  
+.sectionhead:after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    margin: 0.5em auto;
+}
 .hero {
     text-align: center;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(204,204,204,1);
     padding: 6em 1em;
 }
 
@@ -390,24 +448,24 @@ section {
     font-size: 3em;
     line-height: 1;
 }
-
-.hero p {
+  
+  
+  .hero p {
     margin-left: auto;
     margin-right: auto;
 }
+  
+  /* ARTICLE */
 
-
-/* ARTICLES */
 article {
     padding: 4em 0;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
-
 article .date + p::first-letter {
-    color: red;
-    font-size: 6em;
+    /* color: red; */
+    font-size: 5.6em;
     line-height: 1;
     font-weight: bold;
     float: left;
@@ -415,34 +473,41 @@ article .date + p::first-letter {
     padding: 0;
     display: block;
 }
-
 article .date + p::first-line {
     text-transform: uppercase;
     font-weight: bold;
-  }
+}
+  
+  
+/* ADDRESS */
+address {
+    margin: 1em 0;
+}
 
-  /* FORMS */
+/* FORMS */
+form {
+    padding: 0;
+}
 
+label, input[type="text"], textarea {
+    width: 100%;
+    display: block;
+}
 
-  form {
-      padding: 1em 0;
-   }
+label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
 
-  label, input {
-      display: block;
-  }
+input, textarea {
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1em;
+}
 
-  label, input[type="text"], textarea {
-      width: 100%
-  }
-
-  input, textarea {
-      background-color: rgba(0,0,0,.05);
-      border: 1px solid rgba(0,0,0,.2);
-      padding: ;
-
-  }
-
+input[type="submit"] {
+    margin-top: 1.5em;
+}
 
 
 /* ------------------------ */
