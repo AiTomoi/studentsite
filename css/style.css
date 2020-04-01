@@ -5,14 +5,14 @@ body { margin: 0; }
 
 /* GLOBAL COLORS  */
 body {
-    background-color: rgba(0,0,0,1);
-    color: rgba(255,255,255,.8);
+    background-color: rgb(18, 31, 26);
+    color: rgba(245, 227, 71, 0.945);
 }
-a { color: rgb(174, 0, 255); }
+a { color: rgb(255, 158, 151); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Josefin Sans, Arial, sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
