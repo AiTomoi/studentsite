@@ -32,10 +32,12 @@ CSS TABLE OF CONTENTS
 --------------------- */
 
 /* GLOBAL RESETS  */
-body { margin; 0;}
-* {box-sizing: border-box; }
+body { margin: 0;}
+* { box-sizing: border-box; }
 
 /* TYPOGRAPHY */
+
+
 body {
   font-family: Helvetica, Arial, sans-serif;
 /*   font-size: 100%  This sets the value of 1em */
@@ -49,8 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3em;/* 48px based on a 16px em */
-}
- line-height: 1;
+    line-height: 1;
 }
 
 h2 {
@@ -107,7 +108,7 @@ a {
 }
 
 a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 51, 1);
     text-decoration: underline;
 }
 
@@ -128,8 +129,6 @@ blockquote{
     }
 }
 
-
-
 /* MEDIA */
 img {
     max-width: 100%;
@@ -139,8 +138,8 @@ img {
 /* BUTTONS */
 .button,
 button,
-input[type="submit"]{
-   font-size: 1em;
+input[type="submit"] {
+    font-size: 1em;
     display: inline-block;
     background-color: rgba(0, 51, 102, 1);
     color: rgba(255,255,255,1);
@@ -170,7 +169,7 @@ input[type="submit"]:hover {
     color: rgba(255,255,255,1);
     background-color: rgba(0, 0, 51, 1);
 
-  
+}
   
   
 /* BASE LAYOUT */
@@ -245,8 +244,7 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-
-  
+}
   
   /* SITE STRUCTURE */
 
@@ -273,6 +271,8 @@ body {
 .site-footer a:hover {
     color: rgba(0,0,0,1);
 }
+
+
 /* SITE FOOTER */
 .site-footer {
     padding: 1em .5em 2em .5em;
@@ -285,6 +285,8 @@ body {
     font-size: 1.5em;
     margin: 0;
     text-align: center;
+    color: rgba(0,0,0,.5);
+    font-weight: normal;
 }
 
   
@@ -292,6 +294,7 @@ body {
 .site-id a {
     display: inline-block;
     padding: .25em 0;
+    font-weight: bold;
 }
 
   

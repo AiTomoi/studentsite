@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="ut-8" />
-    <title>Site Base | Base Layout</title>
+    <title>Site Name | Contact Us</title>
     <meta name="description" content="This is a Starter HTML, CSS, and JS Boilerplate/Framework." />
 
     <!-- FOR SMALL SCREENS -->
@@ -22,51 +22,46 @@
 
 
 
-    <header class="site-header toggle-nav">
+   <header class="site-header toggle-nav">
         <div class="container">
             <div class="site-id">
-                <h1><a href="index.html">Site Name</a>
-                    <h1>
+                <h1><a href="index.html">Site Name</a> / Contact Us</h1>
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu</div>
                 <ul>
-
+                    <li class="hideonlarge"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-
         </div>
-
-        <div class='site-nav'>
-
-
-        </div>
-
     </header>
 
     <main class="site-main">
         <section class="hero">
-            <h2>About us</h2>
-            <p>This is sub paragraph in the hero section,briefly summarizing this page.</p>
-            <a href="#contactinfo" class="button">Button</a>
-            <a href="#map" class="button alt">Alt Button</a>
+            <h2>Contact Us</h2>
+            <p>This is a contact information sub page. It has common contact information on it such as an address, phone
+                number,
+                contact form, and a map. </p>
+            <a href="#contactinfo" class="button">Contact Info</a>
+            <a href="#map" class="button alt">Map</a>
         </section>
-        <section id="contactinfo" <div class="container">
-            <h3>Ways to Get in Touch</h3>
-
-            <div class="row">
+        <section id="contactinfo">
+            <div class="container">
+                <h3 class="sectionhead">Ways to Get in Touch</h3>
+                <div class="row">
                 <div class="column one-harf">
                     <address>
                         4303 Diamond Head Road<br />
                         Honolulu, HI<br />
                         96814
                     </address>
-                    <a href="tel:808-123-4567" </div> <div class="column one-harf">
-
-                        <form action="#">
+                    <a href="tel:808-123-4567">(808)123-4567</a>
+                    
+                    </div>
+                    <div class="column one-half">
+                        <form>
 
                             <label for="name">Your Name</label>
                             <input type="text" id="yourname" name="yourname" />
@@ -76,12 +71,24 @@
 
                             <label for="yourmessage">Your Message</label>
                             <input type="text" id="yourmessage" name="yourmessage" />
-                        </form>
 
+                         <input type="submit" value="Submit" />
 
+                    </form>
                 </div>
+            </div>
+        </div>    
+    </section>
+
+
+        <section id="map">
+            <div class="cotainer">
+                 <h3 class="sectionhead">Map</h3>
+                 <img src="http://placehold.it/1600x400" alt="Map" />
+            </div>
         </section>
     </main>
+
     <footer class="site-footer">
         <nav class="site-nav">
             <ul>
