@@ -392,9 +392,6 @@ body {
 
 
 /* SITE MAIN (Main Content Area) */
-.site-main {
-
-}
 
 /* SECTIONS */
 section {
@@ -460,7 +457,7 @@ article .date + p::first-line {
   input, textarea {
       background-color: rgba(0,0,0,.05);
       border: 1px solid rgba(0,0,0,.2);
-      padding: ;
+      
 
   }
 
