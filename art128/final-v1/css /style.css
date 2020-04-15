@@ -40,6 +40,7 @@ body {
     font-family: Philosopher, Arial, sans-serif;
     font-size: 100%; /* This sets the value of 1em */ 
     line-height: 10;
+    
 }
 
 /* HEADINGS */
@@ -48,13 +49,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 10em; /* 48px based on a 16px em */
+    font-size: 20em; /* 48px based on a 16px em */
     line-height: 1;
 }
 
 h2 {
     font-size: 2.25em; /* 36px based on a 16px em */
     line-height: 1.1;
+    color: pink;
 }
 
 h3 {
@@ -181,6 +183,7 @@ body {
 .container {
     padding: 0 1em;
     margin: 0 auto;
+    background-color: pink;
     /* overflow-x: hidden; */
 }
 
