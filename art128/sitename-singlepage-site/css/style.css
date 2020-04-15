@@ -121,7 +121,8 @@ img {
 
 /* BUTTONS */
 .button,
-button {
+button,
+input[type="submit"] {
     font-size: 1em;
     display: inline-block;
     background-color: rgba(0, 51, 102, 1);
@@ -133,6 +134,8 @@ button {
     line-height: 1;
     text-align: center;
 }
+
+
 .button:hover,
 button:hover {
     color: rgba(255,255,255,1);
@@ -274,13 +277,29 @@ body {
     font-size: 1.5em;
     margin: 0;
     text-align: center;
+    color: rgba(0,0,0,.5);
+    font-weight: normal;
 }
 
 .site-id a {
     display: inline-block;
     padding: .25em 0;
+    font-weight: bold;
 }
 
+/* STICKY header - works with a class="sticky" on .site-header */
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 100;
+    background-color: #fff;;
+}
+
+.site-header.sticky + .site-main {
+    padding-top: 3em;
+
+}
 /* SITE NAV (Primary Top Nav) */
 .site-nav ul {
     display: flex;
@@ -399,11 +418,20 @@ body {
 /* SECTIONS */
 section {
     padding: 4em 0;
+    background-color: rgba(0,0,0,.05);
+}
+
+section:nth-child(even) {
+    background-color:rgba(0,0,0,.025);
+}
+
+section:last-child {
+    padding-bottom: 10em;
 }
 
 .hero {
     text-align: center;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(204,204,204,1);
     padding: 6em 1em;
 }
 
@@ -415,6 +443,24 @@ section {
 .hero p {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* SUB-SECTIONS */
+.subsectin {
+    padding: 1em 0 1em 0;
+}
+.sectionhead {
+    padding-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+  
+.sectionhead:after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: .15em solid rgba(0, 0, 0, 0.1);
+    margin: 0.5em auto;
 }
 
 
@@ -446,25 +492,29 @@ article .date + p::first-line {
 
 
   form {
-      padding: 1em 0;
+      padding: 0;
    }
 
-  label, input {
+  label, input[type="text"], textarea {
+      width: 100%;
       display: block;
   }
 
-  label, input[type="text"], textarea {
-      width: 100%
+  label { 
+      margin-top: 1em;
+      margin-bottom: 0.5em;
   }
+
 
   input, textarea {
-      background-color: rgba(0,0,0,.05);
-      border: 1px solid rgba(0,0,0,.2);
-      padding: ;
-
+      background-color: rgba(0,0,0,.1);
+      border: 1px solid rgba(0,0,0,.1);
+      padding: 1em;
   }
 
-
+input[type="submit"]{
+    margin-top: 1.5em;
+}
 
 /* ------------------------ */
 /* ------------------------ */
