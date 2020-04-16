@@ -78,7 +78,7 @@ h6 {
 }
 
 .about {
-    align: right;
+   
     background-color: pink;
     padding: 4em 5em; 
   }
@@ -87,26 +87,19 @@ h6 {
 
 .container top{
     float: center
-    background-color: yellow;
-  }
+    
   
   
-  .container about{
-    float: right;
-  }
+
 
 /* PARAGRAPHS */
-p {
-    max-width: 35em;
 
-}
 
 /*  TYPE SPECIMEN */
 
 .headline {
     font-size: 10em;
     font-weight: bold;
-
 }
 
 .subheadline {
