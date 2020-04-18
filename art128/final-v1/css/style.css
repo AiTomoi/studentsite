@@ -39,7 +39,7 @@ body { margin: 0; }
 body {
     font-family: Philosopher, Arial, sans-serif;
     font-size: 100%; /* This sets the value of 1em */ 
-    line-height: 10;
+    line-height: 1.4;
     
 }
 
@@ -49,14 +49,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 20em; /* 48px based on a 16px em */
+    font-size: 3em; /* 48px based on a 16px em */
     line-height: 1;
 }
 
 h2 {
-    font-size: 2.25em; /* 36px based on a 16px em */
+    font-size: 1em; /* 36px based on a 16px em */
     line-height: 1.1;
-    color: pink;
+    color: black;
 }
 
 h3 {
@@ -85,8 +85,9 @@ h6 {
 
 /* container */
 
-.container top{
-    float: center
+.site-header .container {
+    background: red;
+}
     
   
   
@@ -98,7 +99,7 @@ h6 {
 /*  TYPE SPECIMEN */
 
 .headline {
-    font-size: 10em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -257,6 +258,12 @@ body {
 
 .site-header {
     padding: 1em .5em;
+    min-height: 100vh;
+    background-image: url('../img/trees.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
 }
 
 @media (min-width: 768px) {
@@ -269,12 +276,14 @@ body {
 
 .site-header a,
 .site-footer a {
-    color: rgba(0,0,0,.8);
+    color: rgba(233,203,82,.8);
     text-decoration: none;
 }
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgba(0,0,0,1);
+    color: rgba(233,203,82,1);
+    font-style: bold;
+
 }
 
 
@@ -284,15 +293,21 @@ body {
 }
 
 /* SITE ID (LOGO) */
+
+.site-id {
+    text-align: center;
+}
+
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
     text-align: center;
+
 }
 
 .site-id a {
     display: inline-block;
-    padding: .25em 0;
+    color: white;
 }
 
 /* SITE NAV (Primary Top Nav) */
