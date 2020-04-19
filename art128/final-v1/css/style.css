@@ -51,10 +51,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 3em; /* 48px based on a 16px em */
     line-height: 1;
+    color: #F47C66
+   
+    
 }
 
 h2 {
-    font-size: 1em; /* 36px based on a 16px em */
+    font-size: 2.25em; /* 36px based on a 16px em */
     line-height: 1.1;
     color: black;
 }
@@ -77,17 +80,8 @@ h6 {
     font-size: 1em; /* 16px based on a 16px em */
 }
 
-.about {
-   
-    background-color: pink;
-    padding: 4em 5em; 
-  }
 
-/* container */
 
-.site-header .container {
-    background: red;
-}
     
   
   
@@ -98,16 +92,20 @@ h6 {
 
 /*  TYPE SPECIMEN */
 
+
+
+
 .headline {
-    font-size: 3em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
 .subheadline {
-
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 1.2;
     color: rgba(0,0,0,.7);
+    
+
 }
 
 .date {
@@ -166,10 +164,11 @@ button:hover {
 }
 /* BLOCKQUOTES */
 blockquote{
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.2em;
     font-style: italic;
-    font-weight: bolder;
+    font-weight: thin;
+    color: #F47C66;
 }
 
 
@@ -184,6 +183,10 @@ Img {
     max-width: 100%;
     height: auto;
 }
+.comments img {
+    text-align: center;
+}
+
 
 /* BASE LAYOUT */
 
@@ -193,12 +196,35 @@ body {
 }
 /* CONTAINER */
 .container {
-    padding: 0 1em;
+    padding: 0 4em;
     margin: 0 auto;
     background-color: pink;
+    
+
+ 
+
     /* overflow-x: hidden; */
 }
 
+.right {
+    width: 70%;
+    background-color: yellow;
+    padding-right: 5em;
+}
+
+.comments {
+    width: 30%;
+    background-color: lightblue;
+}
+
+.instructor {
+    width: 30%;
+}
+
+/* STYLE */
+.img lotus logo2 {
+    text-align: center;
+}
 /* MEDIA QUERIES */
 /* FOR MID-SIZED SCREENS/TABLETS (and Larger) */
 @media (min-width:768px) {
@@ -266,12 +292,7 @@ body {
     place-items: center;
 }
 
-@media (min-width: 768px) {
-    .site-header .container {
-        display: flex;
-        justify-content: space-between;
-    }
-}
+
 
 
 .site-header a,
@@ -286,6 +307,15 @@ body {
 
 }
 
+.class {
+    text-align: center;
+}
+
+.sectionhead {
+    text-align: center;
+    
+    
+}
 
 /* SITE FOOTER */
 .site-footer {
@@ -296,10 +326,14 @@ body {
 
 .site-id {
     text-align: center;
+    
+    
+   
+   
 }
 
 .site-id h1 {
-    font-size: 1.5em;
+    font-size: 3.5em;
     margin: 0;
     text-align: center;
 
@@ -308,19 +342,40 @@ body {
 .site-id a {
     display: inline-block;
     color: white;
+
 }
+
+
+
+    
+
+
 
 /* SITE NAV (Primary Top Nav) */
 .site-nav ul {
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    font-size: 2em;
+    
+}
+.subsection li {
+    display: inline;
+    
+    justify-content: center;
+    list-style: none;
+    font-size: 1.5em;
+    font-style: bold;
+    color: #8CB46C
+
 }
 
 .site-nav li {
     list-style: none;
+    padding-bottom: -2em;
 }
 
 .site-nav a {
@@ -472,7 +527,7 @@ article .date + p::first-line {
 
 
   form {
-      padding: 1em 0;
+      padding: 10em 1;
    }
 
   label, input {
