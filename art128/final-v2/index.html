@@ -20,13 +20,15 @@
 
 <body id="home">
 
-    <header class="site-header toggle-nav sticky">
-        <div class="container">
+    <header class="site-header toggle-nav">
+        
             <div class="site-id">
-            <a href="#home"><img src="img/logolotus.png" alt="Lotus logo" width="40%" height="40"></a>
-                <h1><a href="#home">Pranaprana Yoga Hawaii</a></h1>
+                <div>
+                    <a href="#home"><img src="img/logolotus.png" alt="Lotus logo" width="40%" height="40"></a>
+                    <h1><a href="#home">Prana Yoga Hawaii</a></h1>
+                </div>
             </div>
-        </div>
+        
             <nav class="site-nav">
                 <ul>
                     <li><a href="#about" class="scroll">About Us</a></li>
@@ -37,10 +39,10 @@
                     <li><a href="#contact" class="scroll">Contact</a></li>
                 </ul>       
             </nav>
-        </div>
+        
     </header>
 
-    <main id="about" class="site-main">
+    <main class="site-main">
 
         <section id="about" class="subsection">
             <div class="container">
@@ -201,20 +203,26 @@ In my classes, I love to teach yoga in order to refresh body and mind in the bea
                 
                 <div class="row">
                     <div class="column one-half ">
-                        <form>
-
+                        <form action="contactpage" method="post">
+                            <div>
                             <label for="name">Your Name</label>
-                            <input type="text" id="yourname" name="yourname" maxlength="10"/>
-
+                            <input type="text" id="yourname" name="yourname"/>
+                            </div>
+                            <div>
                             <label for="youremail">Your Email</label>
                             <input type="text" id="youremail" name="youremail" />
-
+                            </div>
+                            <div>
                             <label for="yourmessage">Your Message</label>
                             <input type="text" id="youremail" name="youremail" />
+                            </div>
+                            </form>
 
-                            <input type="submit" value="Submit" />
+                            <div class="button">
+                            <button type="submit">Submit</button>
+                            </div>
 
-                        </form>
+                        
                     </div>
                 </div>
             </div>
