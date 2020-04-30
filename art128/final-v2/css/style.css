@@ -349,8 +349,28 @@ body {
 
 }
 
+/* Table */
+table th{
+    padding: 6px 3px
+    
+    
+}
 
+table td{
+    padding: 10px 12px
+    
+}
+th {
+    font-size: 2em;
+    color: #8CB46C
+    
+    
+}
+td {
+    font-size: 1.2em;
+    color: white;
 
+}
     
 
 
@@ -376,7 +396,6 @@ body {
 
 .subsection li {
     display: inline;
-    
     justify-content: center;
     list-style: none;
     font-size: 2em;
@@ -539,28 +558,65 @@ article .date + p::first-line {
 
 
   form {
-      padding: 10em ;
+      padding: 2em ;
       line-height: 3em;
       margin: 0 auto;
       width: 400px;
+      font-size:1.5em;
    }
 
   label, input {
       display: block;
+      color: #F47C66;
+      
+      
   }
 
   label, input[type="text"], textarea {
       width: 100%
+      
   }
 
   input, textarea {
       background-color: white;
       border: 1px white;
       box-sizing: border-box;
+      border-radius:4px;
+      font-size: 30px;
   }
 
+  .inputs{
+      width: 400px;
+  }
 
+  input[type="submit"]{
+    background:#F47C66;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
 
+  input[type="reset"] {
+    background:white
+    border: none;
+    color: #F47C66;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+  
+  .btn-area {
+      display: flex;
+}
+
+address {
+    color: #F47C66;
+    line-height: 1.3em;
+}
 /* ------------------------ */
 /* ------------------------ */
 /* ------------------------ */
