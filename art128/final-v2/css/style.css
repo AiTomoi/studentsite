@@ -34,6 +34,15 @@ CSS TABLE OF CONTENTS
 body { margin: 0; }
 * { box-sizing: border-box; }
 
+
+/* Color */
+body {
+    background-color:rgba(0,0,0,.9);
+    color :white;
+
+}
+
+
 /* TYPOGRAPHY */
 
 body {
@@ -59,7 +68,7 @@ h1 {
 h2 {
     font-size: 2.25em; /* 36px based on a 16px em */
     line-height: 1.1;
-    color:black;
+    color:white;
 }
 
 h3 {
@@ -198,9 +207,9 @@ body {
 .container {
     padding: 0 4em;
     margin: 0 auto;
-    background-color: pink;
+    background-color: rgba(255,0,0,.1);
     
-
+}
  
 
     /* overflow-x: hidden; */
@@ -276,6 +285,13 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    .row.swap {
+        flex-direction: row-reverse;
+    }
+    .row.align-bottom {
+        align-items: flex-end;
+    }
+
 }
 
 /* SITE STRUCTURE */
