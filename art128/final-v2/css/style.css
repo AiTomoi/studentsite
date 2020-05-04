@@ -256,6 +256,7 @@ body {
 .column {
     margin-top: 1%;
     margin-bottom: 1%;
+    
 }
 
 @media (min-width: 768px) {
@@ -268,10 +269,14 @@ body {
         flex-grow: 0;
         margin-left: 1%;
         margin-right: 1%;
+
+       
     }
     .one-whole { width: 100%; }
     .one-half { width: 48%; }
     .one-third { width: 31.3333%; }
+   
+
     .push-one-third { margin-left: 34.3333%; }
     .two-thirds { width: 64.6666%; }
     .one-fourth { width: 23%; }
@@ -279,7 +284,12 @@ body {
 
     .row.centered {
         justify-content: center;
+        display: flex;
+            
+            
     }
+    
+
 
     .column.centered {
         margin-left: auto;
