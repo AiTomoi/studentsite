@@ -35,10 +35,15 @@ body { margin: 0; }
 * { box-sizing: border-box; }
 
 
+
+
 /* Color */
 body {
     background-image: url('../img/background.png'); 
+    background-size: cover;
+    
     color :white;
+
 
 }
 
