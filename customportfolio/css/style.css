@@ -50,11 +50,54 @@ a:hover {
     text-align: center;
 }
 
+.text-centered p,
+.mywufooform{
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
 /* #IMAGES */
 img {
     max-width: 100%;
     height:-auto;
 }
+
+img.circular {
+    border-radius: 100%;
+
+}
+
+
+/* BUTTONS */
+
+a.button {
+    display: inline-block;
+    background-color: rgba(0,0,0,.3);
+    color: rgba(255,255,255,.8);
+    border-radius: .5em;
+    padding: 1em 2em .8em 2em;
+    margin: .5em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: .9em;
+
+}
+
+a.button:hover {
+    background-color: pink;
+
+}
+
+
 
 /* SITE-STRUCTURE */
 
@@ -67,10 +110,12 @@ img {
 
 }
 
-.site-identity h1 {
+
+.site-branding h1 {
     font-size: 2em;
     margin: 0;
     font-weight: normal;
+
 }
 
 .site-navigation ul {
@@ -91,16 +136,20 @@ img {
 }
 
 
-.site-navigation a: hover,
+.site-navigation a:hover,
 .site-navigation a.selected {
     color: rgba(0,0,0,.6)
     border-bottom: 0.05em soid rgba(0,0,0.2);
 
 }
+
 section {
     padding: 0 0 3em 0;
 
 }
+
+
+
                     
 /*  #LAYOUT: THUMB IMAGE GRID */
 .thumbgrid {
@@ -133,5 +182,6 @@ section {
 .thumbgrid a:hover img {
     filter: brightness(1);
     border: 1px solid rgba(0,0,0,.3);
-    
+
 }
+
