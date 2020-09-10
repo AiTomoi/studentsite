@@ -26,6 +26,11 @@ body {
     grid-template-rows: auto 1fr;
 }
 
+.container {
+    padding: 0 1em;
+    
+
+}
 /* SITE STRUCTURE */
 .site-header {
     display: flex;
@@ -57,6 +62,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+ /* TWO COLUMN LISTS */
+ .list-two-col ul {
+     margin-bottom: 1em;
+ }
+
+ 
+
 
 /* FOR TESTING ONLY */
 
