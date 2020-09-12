@@ -27,7 +27,10 @@ body {
 }
 
 .container {
+    margin: 0 auto;
+    maxwith: 1000px;
     padding: 0 1em;
+   
     
 
 }
@@ -64,9 +67,32 @@ body {
 }
 
  /* TWO COLUMN LISTS */
- .list-two-col ul {
-     margin-bottom: 1em;
- }
+
+ .list-two-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.list-two-col ul {
+    margin-bottom: 1em;
+}
+
+.list-two-col ul ul {
+    margin-bottom: 0;
+}
+
+.list-two-col li {
+    padding-right: 2em;
+
+}
+
+/* ASSIGNMENT LISTS */
+    .list-assignments li li {
+        color: rgba(255,255,255,.4);
+        
+    }
+ 
 
  
 
