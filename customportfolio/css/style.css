@@ -41,6 +41,12 @@ h2 {
     
 }
 
+h3 {
+    color: gray;
+    text-align: center;
+}
+
+
 /* #LINKS */
 a {
     color: rgba(0,0,0,.4);
@@ -81,9 +87,18 @@ img.circular {
     border-radius: 100%;
 
 }
- 
+.citylogo img {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-bottom: 12em;
+    margin-top: 5em;
+
 
 }
+ 
+
+
 
 /* BUTTONS */
 
@@ -192,4 +207,15 @@ section {
     border: 1px solid rgba(0,0,0,.3);
 
 }
-
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
