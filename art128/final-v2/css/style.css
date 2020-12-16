@@ -583,7 +583,7 @@ article .date + p::first-line {
   /* FORMS */
 
 
-  form {
+  #contact, form {
       padding: 2em ;
       line-height: 3em;
       margin: 0 auto;
