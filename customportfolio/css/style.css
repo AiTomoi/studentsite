@@ -47,6 +47,11 @@ body {
   /* 14px x 1.5em = 21px */
 }
 
+h1 {
+  text-align: center;
+}
+
+
 /* #LINKS */
 a {
   color: #bbb;
@@ -451,10 +456,13 @@ body {
   padding: 4em 0;
 }
 
-/* .text-centered p{
+ .text-centered fade-and-move-in p{
     text-align: left;
-    max-width: 35em;
-  } */
+    max-width: 20em;
+  } 
+
+
+ 
 
 /*  #LAYOUT: THUMB IMAGE GRID */
 .thumbgrid {
