@@ -244,6 +244,9 @@ body {
 .citylogobg {
   background-color: */
 
+
+  
+
 .citylogo p {
   max-width: 30em;
 }
@@ -476,9 +479,11 @@ body {
   padding: 4em 0;
 }
 
- .text-centered fade-and-move-in p{
+ .text-centered p{
     text-align: left;
     max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
   } 
 
 
