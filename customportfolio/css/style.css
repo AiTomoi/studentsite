@@ -40,9 +40,10 @@ figure {
 /* #TYPOGRAPHY  */
 body {
  
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
   color: #333;
   font-size: 87.5%;
+  background-color: red;
  
   /* 14px; */
   line-height: 1.5em;
@@ -53,10 +54,12 @@ body {
 
 h1 {
   text-align: center;
-  font-family: Mr Eaves XL Mod OT Thin ;
+  font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
+  font-weight: 900;
 }
 .site-header h1{
-  font-family: Mr Eaves XL Mod OT Thin ;
+  font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
 
 
@@ -248,11 +251,12 @@ body {
     width: 13.6%;
   }
 }
-/*
-.citylogobg {
-  background-color: */
 
+.bg {
+  background-color:  red;}
 
+.citylogobg{
+  background-color:  green;}
   
 
 .citylogo p {
@@ -375,7 +379,7 @@ form label {
 
 form input,
 form textarea {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.15em;
   display: block;
@@ -468,12 +472,12 @@ fade-in {
 --------------------------------- */
 
 body {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
   background: #fff;
 }
 
 .site-navigation {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
 }
 
 /* Custom Sections */
