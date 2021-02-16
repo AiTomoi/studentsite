@@ -3,45 +3,117 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ai</title>
-    <meta name="description" content="This is my Student Site" />
+    <title>My portfolio</title>
+    <meta name="description" content="A minimal, simple portfolio site." />
 
-    <!-- FOR SMALL SCREENS -->
+    <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FOR IE/EDGE -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- MAIN CSS -->
-    <link href="#" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dlh1tln.css">
 
 </head>
 
-<body>
+<body class="">
+
+
 
     <header class="site-header">
-
-        <div class="site-id">
-            <h1><a href="index.html">AT</a></h1>
+        <div class="site-identity">
+            <h1>
+                <a href="index.html">Ai Tomoi</a>
+            </h1>
         </div>
 
-        <nav class="site-nav">
+        <nav class="site-navigation">
             <ul>
-                <li><a href="index.html">home</a></li>
+                <li class="selected">
+                    <a href="index.html#work" class="selected">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
             </ul>
         </nav>
-
     </header>
 
-    <main class="site-main">
 
-        <h1>Portfolio</h1>
-        <p>working in progress </p>
+    <main class="site-main fade-and-move-in">
 
-
+        <section id="work" class="text-centered">
+            <div class="container">
+                <ul class="thumbgrid hovercaps">
+                    <li>
+                        <a href="citylogo.html">
+                            <img src="img/thumb-santafe.jpg" alt="citylogoforgrid" />
+                            <div class="caption">
+                                <h3>Santa Fe</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bookcover.html">
+                            <img src="img/thumb-bookcover.jpg" alt="radio lab book cover trilogy" />
+                            <div class="caption">
+                                <h3>Radio Lab Book Cover</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="logo.html">
+                            <img src="img/thumb-dolelogo.jpg" alt="dole logo" />
+                            <div class="caption">
+                                <h3>Dole</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="thumbgrid hovercaps">
+                    <li>
+                        <a href="brochure.html">
+                            <img src="img/thumb-morocco.jpg" alt="morocco brochure" />
+                            <div class="caption">
+                                <h3>Morocco</h3>
+                            </div>
+                        </a>
+                    <li>
+                        <a href="pictogram.html">
+                            <img src="img/thumb-pictogram.jpg" alt="pictogram" />
+                            <div class="caption">
+                                <h3>Pictogram</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pranayoga.html">
+                            <img src="img/thumb-prana-site.jpg" alt="prana site" />
+                            <div class="caption">
+                                <h3>Prana Yoga</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer fade-and-move-in">
+        <nav class="site-navigation">
+            <ul>
+                <li>
+                    <a href="index.html#work">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
 
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 
