@@ -588,6 +588,22 @@ body {
 .pictogram row {
   margin-top: 4em;
 }
+/* gradient text */
+.gradient h1 {
+  line-height: 175px;
+  font-size: 125px;
+  font-family: "mr-eaves-xl-modern";
+  display: inline-block;
+  background-image: linear-gradient(to bottom, purple, pink);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Hover Caps */
 .hovercaps a {
