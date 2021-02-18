@@ -531,34 +531,41 @@ body {
 .thumbgrid {
     padding: 0;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
     justify-content: center;
     margin: 0;
 }
 
 .thumbgrid li {
     list-style: none;
-    width: 49.5%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
     /* padding-bottom: 0.4%; */
     
 }
 
 @media (min-width: 768px) {
     .thumbgrid li {
-        width: 24.5%
+        width: 33.3333%;
     }
+}
+
+.thumbgrid a {
+  display: block;
 }
 
 .thumbgrid a img {
     filter: brightness(1.05);
     transition: all ease-in-out 0.2s;
-    border: 1px solid rgba(255,255,255,0);
+    display: block;
+    
 
 }
 
 .thumbgrid a:hover img {
     filter: brightness(1);
-    border: 1px solid rgba(0,0,0,.3);
+    
 
 }
 
@@ -607,7 +614,7 @@ body {
 
 /* Hover Caps */
 .hovercaps a {
-  display: inline-block;
+  display: block;
   position: relative;
   overflow: hidden;
 }
