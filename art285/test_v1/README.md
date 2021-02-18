@@ -1,4 +1,4 @@
 # beta | working in progress
 portfolio-beta
 
-[view my site](https://aitomoi.github.io/studentsite/portfolio_v1)
+[view my site](https://aitomoi.github.io/studentsite/test_v1)
