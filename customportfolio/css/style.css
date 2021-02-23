@@ -264,7 +264,8 @@ body {
 .pictogram p,
 .dole p,
 .brochure p,
-.city-logo p {
+.city-logo p,
+.prana p {
   padding-bottom: 3em;
 }
 
